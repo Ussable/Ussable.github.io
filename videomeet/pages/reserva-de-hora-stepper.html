@@ -307,103 +307,27 @@
               <div class="breadcrumb-item">Solicitar hora</div>
             </div>
           </div>
+
           <div class="section-body">
-
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Create New App</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row mt-4">
-                      <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="wizard-steps">
-
-                          <div class="wizard-step wizard-step-active">
-                            <div class="wizard-step-icon">
-                              <i class="far fa-user"></i>
-                            </div>
-                            <div class="wizard-step-label">User Account</div>
-                          </div>
-
-                          <div class="wizard-step">
-                            <div class="wizard-step-icon">
-                              <i class="fas fa-box-open"></i>
-                            </div>
-                            <div class="wizard-step-label">
-                              Create an App
-                            </div>
-                          </div>
-                          <div class="wizard-step">
-                            <div class="wizard-step-icon">
-                              <i class="fas fa-server"></i>
-                            </div>
-                            <div class="wizard-step-label">
-                              Server Information
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <form class="wizard-content mt-2">
-                      <div class="wizard-pane">
-                        <div class="form-group row align-items-center">
-                          <label class="col-md-4 text-md-right text-left">Name</label>
-                          <div class="col-lg-4 col-md-6">
-                            <input type="text" name="name" class="form-control">
-                          </div>
-                        </div>
-                        <div class="form-group row align-items-center">
-                          <label class="col-md-4 text-md-right text-left">Email</label>
-                          <div class="col-lg-4 col-md-6">
-                            <input type="email" name="email" class="form-control">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label class="col-md-4 text-md-right text-left mt-2">Address</label>
-                          <div class="col-lg-4 col-md-6">
-                            <textarea class="form-control" name="address"></textarea>
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label class="col-md-4 text-md-right text-left mt-2">Role</label>
-                          <div class="col-lg-4 col-md-6">
-                            <div class="selectgroup w-100">
-                              <label class="selectgroup-item">
-                                <input type="radio" name="value" value="developer" class="selectgroup-input">
-                                <span class="selectgroup-button">Developer</span>
-                              </label>
-                              <label class="selectgroup-item">
-                                <input type="radio" name="value" value="ceo" class="selectgroup-input">
-                                <span class="selectgroup-button">CEO</span>
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-md-4"></div>
-                          <div class="col-lg-4 col-md-6">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" name="agree" class="custom-control-input" id="agree">
-                              <label class="custom-control-label" for="agree">I agree with the terms and conditions</label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-md-4"></div>
-                          <div class="col-lg-4 col-md-6 text-right">
-                            <a href="#" class="btn btn-icon icon-right btn-primary">Next <i class="fas fa-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active p-2" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Identificate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Elige especialidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Elige hora</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">uno</div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">dos</div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">tres</div>
             </div>
 
+            <h2 class="section-title">This is Example Page</h2>
+            <p class="section-lead">This page is just an example for you to create your own page.</p>
             <div class="row">
               <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
                 <div class="login-brand">
@@ -495,47 +419,47 @@
                   </div>
                 </div>
 
-                <!-- Paso 2: Seleccion hora -->
-                <div class="card card-primary">
-                  <div class="card-header"><h4>Regístrate</h4></div>
-                  <div class="card-body">
-                    <form method="POST">
-                      <div class="row">
-                        <div class="form-group col-12 col-lg-6">
-                          <label for="first_name">Nombre</label>
-                          <input id="first_name" type="text" class="form-control" name="first_name" autofocus>
-                        </div>
-                        <div class="form-group col-12 col-lg-6">
-                          <label for="last_name">Apellido</label>
-                          <input id="last_name" type="text" class="form-control" name="last_name">
-                        </div>
-                        <div class="form-group col-12">
-                          <label for="rut">Rut</label>
-                          <input id="rut" type="text" class="form-control" name="rut">
-                          <div class="invalid-feedback"></div>
-                        </div>
-                        <div class="form-group col-12">
-                          <label for="email">Email</label>
-                          <input id="email" type="email" class="form-control" name="email">
-                          <div class="invalid-feedback"></div>
-                        </div>
-                      </div>
+<!-- Paso 2: Seleccion hora -->
+<div class="card card-primary">
+  <div class="card-header"><h4>Regístrate</h4></div>
+  <div class="card-body">
+    <form method="POST">
+      <div class="row">
+        <div class="form-group col-12 col-lg-6">
+          <label for="first_name">Nombre</label>
+          <input id="first_name" type="text" class="form-control" name="first_name" autofocus>
+        </div>
+        <div class="form-group col-12 col-lg-6">
+          <label for="last_name">Apellido</label>
+          <input id="last_name" type="text" class="form-control" name="last_name">
+        </div>
+        <div class="form-group col-12">
+          <label for="rut">Rut</label>
+          <input id="rut" type="text" class="form-control" name="rut">
+          <div class="invalid-feedback"></div>
+        </div>
+        <div class="form-group col-12">
+          <label for="email">Email</label>
+          <input id="email" type="email" class="form-control" name="email">
+          <div class="invalid-feedback"></div>
+        </div>
+      </div>
 
-                      <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" name="agree" class="custom-control-input" id="agree">
-                          <label class="custom-control-label" for="agree">Estoy de acuerdo con los términos y condiciones</label>
-                        </div>
-                      </div>
+      <div class="form-group">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" name="agree" class="custom-control-input" id="agree">
+          <label class="custom-control-label" for="agree">Estoy de acuerdo con los términos y condiciones</label>
+        </div>
+      </div>
 
-                      <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">
-                          Register
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg btn-block">
+          Register
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
                 <div class="simple-footer">
                   CodeBase© 2020
                 </div>

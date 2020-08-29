@@ -29,7 +29,7 @@
       background-color: color_lighten(primary, 31%);
     }
     &.active {
-      @include button-shadow(primary);
+      @include shadow-inset-darken(primary);
       color: #fff;
       background-color: color(primary);
     }
