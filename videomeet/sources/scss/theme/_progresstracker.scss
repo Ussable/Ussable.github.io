@@ -10,6 +10,8 @@
       flex-basis: 0;
       //margin: 0 10px;
       margin-bottom: 0;
+      background-color: transparent;
+      box-shadow: none;
      .progress-tracker-label {
         font-size: .7em;
         text-transform: uppercase;
@@ -18,14 +20,13 @@
         color: color(gray);
         background-color: transparent;
         box-shadow: none;
-        padding-left: 10px !important;
+        padding-left: 20px !important;
         &:before {
           counter-increment: progress-tracker-label;
           content: counter(progress-tracker-label);
           position: absolute;
           bottom: 18px;
           left: 0px;
-          transform: translateX(-50%);
           width: 20px;
           height: 20px;
           line-height: 21px;
