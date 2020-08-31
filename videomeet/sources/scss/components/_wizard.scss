@@ -25,6 +25,7 @@
       font-weight: 700;
       border-radius: 50%;
       background-color: color(light);
+      text-align: center;
     }
     &.wizard-step-active {
       @include shadow-lighten(primary);

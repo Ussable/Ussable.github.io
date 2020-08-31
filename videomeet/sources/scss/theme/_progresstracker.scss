@@ -1,0 +1,108 @@
+
+  .nav-pills.progress-tracker {
+    display: flex;
+    counter-reset: progress-tracker-label;
+    .progress-tracker-step {
+      @include card-base;
+      padding: 5px;
+      text-align: left;
+      flex-grow: 1;
+      flex-basis: 0;
+      //margin: 0 10px;
+      margin-bottom: 0;
+     .progress-tracker-label {
+        font-size: .7em;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        font-weight: 700;
+        color: color(gray);
+        background-color: transparent;
+        box-shadow: none;
+        padding-left: 10px !important;
+        &:before {
+          counter-increment: progress-tracker-label;
+          content: counter(progress-tracker-label);
+          position: absolute;
+          bottom: 18px;
+          left: 0px;
+          transform: translateX(-50%);
+          width: 20px;
+          height: 20px;
+          line-height: 21px;
+          font-size: 10px;
+          font-weight: 700;
+          border-radius: 50%;
+          background-color: color(light);
+          text-align: center;
+        }
+
+      }
+      .progress-tracker-label.active{
+          color: color(primary);
+
+        &:before {
+          background-color: color(primary);
+          color: color(white);
+        }
+      }
+  }
+}
+    // &.wizard-step-active {
+    //   @include shadow-lighten(primary);
+    //   background-color: color(primary);
+    //   color: #fff;
+    //   &:before {
+    //     background-color: color(primary);
+    //     color: #fff;
+    //   }
+    // }
+    // &.wizard-step-success {
+    //   background-color: color(success);
+    //   color: #fff;
+    //   &:before {
+    //     background-color: color(success);
+    //     color: #fff;
+    //   }
+    // }
+    // &.wizard-step-danger {
+    //   background-color: color(danger);
+    //   color: #fff;
+    //   &:before {
+    //     background-color: color(danger);
+    //     color: #fff;
+    //   }
+    // }
+    // &.wizard-step-warning {
+    //   background-color: color(warning);
+    //   color: #fff;
+    //   &:before {
+    //     background-color: color(warning);
+    //     color: #fff;
+    //   }
+    // }
+    // &.wizard-step-info {
+    //   background-color: color(info);
+    //   color: #fff;
+    //   &:before {
+    //     background-color: color(info);
+    //     color: #fff;
+    //   }
+    // }
+    // .wizard-step-icon {
+    //   .fas, .far, .fab, .fal, .ion {
+    //     font-size: 34px;
+    //     margin-bottom: 15px;
+    //   }
+    // }
+
+//   }
+// }
+
+@include media-breakpoint-down(xs) {
+  // .wizard-steps {
+  //   display: block;
+  //   .wizard-step {
+  //     margin-bottom: 50px;
+  //   }
+  //}
+}
