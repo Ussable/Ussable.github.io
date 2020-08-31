@@ -21,7 +21,7 @@
     background-color: color(primary);
   }
   &.disabled {
-    color: color_darken(light, 8%);
+    color: color_lighten(light, 8%);
   }
 }
 

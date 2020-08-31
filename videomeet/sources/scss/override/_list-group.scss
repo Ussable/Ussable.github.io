@@ -1,0 +1,37 @@
+
+.list-group-item {
+  color: color(primary);
+  &.disabled,
+  &:disabled {
+    color: color_lighten(dark, 60%);
+    .badge.badge-primary.badge-pill {
+      background-color: color_lighten(dark, 75%);
+    }
+  }
+  &.active,
+  &:active {
+    color: color(white);
+    .badge.badge-primary.badge-pill {
+      background-color: color(white);
+      color: color(primary);
+    }
+  }
+  &.active:hover,
+  &:active:hover {
+    // color: color(white);
+    .badge.badge-primary.badge-pill {
+      background-color: color(primary);
+      color: color(white);
+    }
+}
+}
+.list-group-item-action {
+  &.hover,
+  &:hover {
+    color: color_lighten(primary, 5%);
+    background-color: color_lighten(primary, 25%);
+    //.badge.badge-primary.badge-pill {
+    //   background-color: color_lighten(dark, 75%);
+    // }
+  }
+}
