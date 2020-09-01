@@ -11,6 +11,7 @@
   &.active,
   &:active {
     color: color(white);
+    background-color: color_lighten(primary, 10%);
     .badge.badge-primary.badge-pill {
       background-color: color(white);
       color: color(primary);
@@ -30,8 +31,5 @@
   &:hover {
     color: color_lighten(primary, 5%);
     background-color: color_lighten(primary, 25%);
-    //.badge.badge-primary.badge-pill {
-    //   background-color: color_lighten(dark, 75%);
-    // }
   }
 }

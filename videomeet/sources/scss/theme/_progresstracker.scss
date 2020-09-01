@@ -35,75 +35,43 @@
           border-radius: 50%;
           background-color: color(light);
           text-align: center;
+          }
+        &:after {
+          position: absolute;
+          content: "";
+          top: 50%;
+          width: 40%;
+          right: 0;
+          height: 1px;
+          border-radius: 50%;
+          background-color: lighten(gray, 30%);
+          text-align: center;
         }
-
       }
       .progress-tracker-label.active{
           color: color(primary);
-
         &:before {
           background-color: color(primary);
           color: color(white);
         }
       }
-  }
-}
-    // &.wizard-step-active {
-    //   @include shadow-lighten(primary);
-    //   background-color: color(primary);
-    //   color: #fff;
-    //   &:before {
-    //     background-color: color(primary);
-    //     color: #fff;
-    //   }
-    // }
-    // &.wizard-step-success {
-    //   background-color: color(success);
-    //   color: #fff;
-    //   &:before {
-    //     background-color: color(success);
-    //     color: #fff;
-    //   }
-    // }
-    // &.wizard-step-danger {
-    //   background-color: color(danger);
-    //   color: #fff;
-    //   &:before {
-    //     background-color: color(danger);
-    //     color: #fff;
-    //   }
-    // }
-    // &.wizard-step-warning {
-    //   background-color: color(warning);
-    //   color: #fff;
-    //   &:before {
-    //     background-color: color(warning);
-    //     color: #fff;
-    //   }
-    // }
-    // &.wizard-step-info {
-    //   background-color: color(info);
-    //   color: #fff;
-    //   &:before {
-    //     background-color: color(info);
-    //     color: #fff;
-    //   }
-    // }
-    // .wizard-step-icon {
-    //   .fas, .far, .fab, .fal, .ion {
-    //     font-size: 34px;
-    //     margin-bottom: 15px;
-    //   }
-    // }
+      }
+    li.nav-item.progress-tracker-step:last-child {
+          .progress-tracker-label{
+            &:after {
+              display: none;
+            }
+          }
 
-//   }
-// }
-
+        }
+      }
 @include media-breakpoint-down(xs) {
-  // .wizard-steps {
-  //   display: block;
-  //   .wizard-step {
-  //     margin-bottom: 50px;
-  //   }
-  //}
+  .progress-tracker-label {
+    &:after {
+      content: "";
+      display: none;
+
+    }
+
+  }
 }
